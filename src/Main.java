@@ -5,7 +5,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
         /*
         String nombre;
         double edad;
@@ -20,7 +19,6 @@ public class Main {
         System.out.println(nombre + " " + edad);
         */
 
-        /*
         System.out.println("Ejercicios en clase:");
 
         System.out.println("> Ejercicio 1: Conteo de n a m con un salto de i");
@@ -35,22 +33,26 @@ public class Main {
         for (int i = n; i <= m; i+=salto) {
             System.out.println(" >>" + i);
         }
-        */
-        /*
-        PrintStream printf = System.out.println(">> Ejercicio 2: Imprimir nombre");
+
+        System.out.println(">> Ejercicio 2: Imprimir nombre");
+        String nombre = scanner.next();
         for (int i = 1; i <= 50; i++) {
-            System.out.println("Jhonny Villanueva M.");
-        }
-        */
-        System.out.println(">> Ejercicio 3: 20 Primeros numero primos");
-        int divisores = 0;
-        for (int i = 1; i <= 20; i++) {
-            for (int j = 2; j <= i; j++) {
-                if (i % j == 0) divisores++;
-                if (divisores == 1) System.out.println(i);
-            divisores = 0;
-            }
+            System.out.println(nombre);
         }
 
+        System.out.println(">> Ejercicio 3: 20 Primeros numero primos");
+        boolean primo;
+        for (int i = 1; i <= 20; i++) {
+            primo = true;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    primo = false;
+                    break;
+                }
+            }
+            if (primo) {
+                System.out.println(i);
+            }
+        }
     }
 }
