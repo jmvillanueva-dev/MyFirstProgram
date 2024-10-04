@@ -1,4 +1,3 @@
-package org.example;
 import java.util.Scanner;
 
 public class Main {
@@ -19,6 +18,7 @@ public class Main {
         System.out.println(nombre + " " + edad);
         */
 
+        // Este ejercicio muestra como contar de un numero n hasta un numero m.
         System.out.println("Ejercicios en clase:");
 
         System.out.println("> Ejercicio 1: Conteo de n a m con un salto de i");
@@ -34,12 +34,14 @@ public class Main {
             System.out.println(" >>" + i);
         }
 
+        // Imprime tu nombre de forma reiterada.
         System.out.println(">> Ejercicio 2: Imprimir nombre");
-        String nombre = scanner.next();
+        String nombre = scanner.nextLine();
         for (int i = 1; i <= 50; i++) {
             System.out.println(nombre);
         }
 
+        // Imprime los 20 primeros numeros primos.
         System.out.println(">> Ejercicio 3: 20 Primeros numero primos");
         boolean primo;
         for (int i = 1; i <= 20; i++) {
@@ -56,3 +58,4 @@ public class Main {
         }
     }
 }
+//
